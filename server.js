@@ -6,6 +6,7 @@ app.use(express.json());
 
 // Data object to store calculation history
 const history = [];
+console.log('inside history', history);
 
 // Route to handle POST request
 app.post('/calculate', function(req, res) {
@@ -48,6 +49,7 @@ app.post('/calculate', function(req, res) {
     result: result
   };
   history.push(calculation);
+  console.log('inside calculations');
 
   // Send response
   res.status(200).send('OK');
@@ -59,7 +61,7 @@ app.get('/history', function(req, res) {
 });
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5050;
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`);
 });

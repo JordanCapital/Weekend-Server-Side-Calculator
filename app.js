@@ -1,6 +1,6 @@
 // Define a global array to store calculation history
 const history = [];
-
+console.log(`This is calculation history Array, ${history}`)
 // Get elements from DOM
 const calculatorForm = $("#calculator-form");
 const clearBtn = $("#clear-btn");
