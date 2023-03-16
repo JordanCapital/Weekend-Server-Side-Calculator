@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Server-side Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="calculator">
+		<h1>Server-side Calculator</h1>
+		<form id="calculator-form">
+			<input type="number" name="num1" placeholder="Enter first number">
+			<input type="number" name="num2" placeholder="Enter second number">
+			<select name="operation">
+				<option value="add">+</option>
+				<option value="subtract">-</option>
+				<option value="multiply">*</option>
+				<option value="divide">/</option>
+			</select>
+			<button type="submit">Calculate</button>
+			<button type="button" id="clear-btn">C</button>
+		</form>
+		<p id="result"></p>
+	</div>
+
+	<div class="history">
+		<h2>Calculation History</h2>
+		<ul id="history-list">
+		</ul>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

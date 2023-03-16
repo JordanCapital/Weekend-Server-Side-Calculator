@@ -1,0 +1,67 @@
+/* Calculator container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Input fields */
+  .calculator input[type="number"] {
+    width: 200px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Operation select dropdown */
+  .calculator select {
+    width: 200px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Submit and clear buttons */
+  .calculator button {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .calculator button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Calculation result */
+  .calculator p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Calculation history container */
+  .history {
+    margin-top: 20px;
+  }
+  
+  /* Calculation history list */
+  .history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Calculation history list items */
+  .history li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
