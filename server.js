@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+app.use(express.static('public'))
 // Middleware to parse JSON data
 app.use(express.json());
 
@@ -61,7 +61,7 @@ app.get('/history', function(req, res) {
 });
 
 // Start server
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}`);
 });
